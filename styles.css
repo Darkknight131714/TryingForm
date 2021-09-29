@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    min-height: 1000vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 00.5s;
+    padding: 20px 60px;
+    z-index: 100000;
+}
+
+header.sticky {
+    padding: 20px 60px;
+    background: #fff;
+    box-shadow: 0 2px 4px -2px grey;
+}
+
+.logo {
+    position: relative;
+    font-weight: 700;
+    color: #000;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 20px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+header ul li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+header ul li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+
+.banner1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(images/Asset\ 6.png), url(images/background1.png);
+    background-repeat: no-repeat;
+    background-position: 925px 250px, top right;
+    background-size: 26.5%, 50%;
+}
+
+header.sticky .contactus {
+    border-color: black;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+.infoBanner1 {
+    position: absolute;
+    width: 480px;
+    height: 306px;
+    top: 35%;
+    left: 60px;
+}
+
+h2 {
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #19213C;
+}
+
+h1 {
+    margin: 10px 0;
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+    color: #19213C;
+}
+
+p {
+    font-family: Graphik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.para2 {
+    margin-top: 10px;
+}
+
+.banner1Button {
+    width: 130px;
+    height: 40px;
+    margin-top: 15px;;
+    background: #25D366;
+    border-style: none;
+    border-radius: 50px;
+    color: white;
+}
+
+.imageBanner1 {
+}
