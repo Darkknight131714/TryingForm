@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <title>Contact Us</title>
         <link rel="stylesheet" href="styles_contactUs.css" />
     </head>
@@ -17,13 +17,13 @@
                         src="images/Vector 5.svg"
                         alt=""
                     />
-                    <header>
+                    <header class>
                         <a href="#" class="logo">Panglobe</a>
                         <ul>
-                            <li><a class="active" href="#home">Home</a></li>
+                            <li><ahref="#home">Home</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#language">Languages</a></li>
-                            <li><a href="#aboutus">About Us</a></li>
+                            <li><a  class="active" href="#aboutus">About Us</a></li>
                             <li>
                                 <a href="#contactus" class="contactus"
                                     >Contact Us</a
@@ -72,15 +72,27 @@
                             <div class="form_heading">
                                 <p class="form_intro">Get in touch...</p>
                             </div>
+                            <form action="https://formsubmit.co/darkknight131714@gmail.com" method="POST">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactUs.html">
+                                <!-- <input onclick="window.location.href = 'contactUs.html';" type="submit" value="Submit request" /> -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <!-- <input type="text" name="name" required placeholder="Name">
+                                <input type="email" name="email" required placeholder="Email Address">
+                                <input type="text" name="Message" required placeholder="Enter Your Message"> -->
+                                <input type="hidden" name="_template" value="table">
+                                <!-- <button type="submit">Send</button> -->
+                            
                             <div class="form_inputs">
                                 <input
                                     type="Name"
+                                    name="name"
                                     class="form-input name"
                                     placeholder="Name"
                                     required
                                 />
                                 <input
                                     type="email"
+                                    name="email"
                                     class="form-input email"
                                     placeholder="Email"
                                     required
@@ -89,17 +101,21 @@
                                     type="text"
                                     class="form-input company"
                                     placeholder="Company"
+                                    name="company"
                                 />
                                 <textarea
                                     class="mssg"
                                     placeholder="Message"
+                                    name="Message"
+                                    required
                                 ></textarea>
                             </div>
                             <div class="form_button">
-                                <button class="form_submit_button">
+                                <button type="submit" class="form_submit_button">
                                     <p>Submit</p>
                                 </button>
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -182,10 +198,6 @@
 
             <div class="aboutusFooter">
                 <h2 class="aboutus_footer">About Us</h2>
-            </div>
-
-            <div class="languagesFooter">
-                <h2 class="languages_footer">Languages</h2>
             </div>
 
             <div class="contactusFooter">

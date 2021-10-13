@@ -3,18 +3,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: Graphik;
+    src: url("fonts/GraphikLight.otf");
+  }
 
 body {
     background-color: #fff;
-    min-height: 1000vh;
+    /* min-height: 1000vh; */
 }
-
+a{
+    text-decoration: none;
+}
 .container {
     max-width: 1240px;
     margin: 0 auto;
     background: transparent;
 }
-
 
 .contactUs_bg {
     position: absolute;
@@ -357,6 +362,20 @@ textarea:focus, input:focus{
     column-gap: 20px;
 }
 
-
-
-
+@media only screen and (max-width: 1000px) {
+    ul{
+        left:50px;
+    }
+    .contact_form_section{
+        left: -100px;
+    }
+    .contactUs_bg{
+        height:800px;
+        width:100%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: -20%;
+        z-index: -1;
+    }
+}
